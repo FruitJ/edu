@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+
+    .input {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .output {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    :global(.ant-empty) {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    :global(.divider) {
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
